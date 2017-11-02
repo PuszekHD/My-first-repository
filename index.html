@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Komponenty JS Butstrap</title>
+		<link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+    				<a class="navbar-brand" href="#">Krzak</a>
+    				<button type="button" class="navbar-toggle btn-block btn-lg menu-hamburger" data-toggle="collapse" data-target="#menu-collapse">
+    					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+      				</button>    			
+    			</div>
+      			<div class="collapse navbar-collapse" id="menu-collapse">
+    				<ul class="nav navbar-nav text-center">
+    					<li class="active"><a href="#">Home</a></li>
+        				<li><a href="#">fotki</a></li>
+        				<li><a href="#">tabelka</a></li>
+        				<li><a href="#">formularz</a></li>
+    				</ul>
+    			</div>
+			</div>
+		</nav>
+		<section class="hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-3 col-md-6 col-md-offset-3">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    						<ol class="carousel-indicators">
+      							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      							<li data-target="#myCarousel" data-slide-to="1"></li>
+      							<li data-target="#myCarousel" data-slide-to="2"></li>
+      							<li data-target="#myCarousel" data-slide-to="3"></li>
+      							<li data-target="#myCarousel" data-slide-to="4"></li>
+    						</ol>
+    						<div class="carousel-inner" role="listbox">
+  								<div class="item active example-1">
+  									<img src="https://static.pexels.com/photos/458928/pexels-photo-458928.jpeg" alt="piękny widok z górami i lasem">
+  								</div>
+  								<div class="item example-2">
+  									<img src="https://static.pexels.com/photos/546256/pexels-photo-546256.jpeg" alt="górski krajobraz">
+  								</div>
+  								<div class="item example-3">
+  									<img src="https://static.pexels.com/photos/464398/pexels-photo-464398.jpeg" alt="gorące źródła krajobraz">
+  								</div>
+  								<div class="item example-4">
+  									<img src="https://images.pexels.com/photos/619950/pexels-photo-619950.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="krajobraz górski z dużym jeziorem, w którym odbija się widok">
+  								</div>
+  								<div class="item example-5">
+  									<img src="https://static.pexels.com/photos/318417/pexels-photo-318417.jpeg" alt="krajobraz górski, mgła w tle">
+  								</div>
+							</div>
+							<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+  								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+  								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="tabs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="nav nav-tabs">
+  							<li class="active"><a data-toggle="tab" href="#home">O mnie</a></li>
+  							<li><a data-toggle="tab" href="#hobby">Hobby</a></li>
+  							<li><a data-toggle="tab" href="#achievements">Osiągnięcia</a></li>
+						</ul>
+						<div class="tab-content">
+  							<div id="home" class="tab-pane fade in active">
+    							<h3>Ogólnie o mnie</h3>
+    							<p>Nazywam się Filip Derewońko. Mam 24 lata. Uczę się programowania w "Kodilli". Kończę studia na wydziale Geologii na Uniwersytecie Warszawskim.</p>
+  							</div>
+  							<div id="hobby" class="tab-pane fade">
+    							<h3>Hobby</h3>
+    							<p>Interesuję się sportem, w szczególności piłką nożną. Lubię grać na komputerze, programować.</p>
+  							</div>
+  							<div id="achievements" class="tab-pane fade">
+    							<h3>Osiągnięcia</h3>
+    							<p>Posiadam certyfikat B2 z języka angielskiego. Poznałem języki programowania HTML, CSS, framework Bootstrap.</p>
+  							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">
+  							Podsumowanie
+						</button>
+						<div id="exampleModal" class="modal fade" role="dialog">
+  							<div class="modal-dialog">
+     							<div class="modal-content">
+       								<div class="modal-header">
+         								<h4>Podsumowanie</h4>
+       								</div>
+       								<div class="modal-body">
+       									<p>Ostatni element tego submodułu dotyczący Bootstrapa. Pora przejść do następnego submodułu dotyczącego preprocesorów</p>
+       								</div>
+       								<div class="modal-footer">
+       									<p>To tyle ode mnie</p>
+		         						<button type="button" class="btn btn-primary" data-dismiss="modal">Close
+         								</button>
+       								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>
