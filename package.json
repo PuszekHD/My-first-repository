@@ -1,0 +1,26 @@
+{
+  "name": "stronki",
+  "version": "1.0.0",
+  "description": "I'm new here. I' ll try to make my first repository. So this is only a training.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PuszekHD/My-first-repository.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PuszekHD/My-first-repository/issues"
+  },
+  "homepage": "https://github.com/PuszekHD/My-first-repository#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
