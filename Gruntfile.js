@@ -1,6 +1,8 @@
 module.exports = function (grunt) {
 
     // Project configuration.
+    const mozjpeg = require('imagemin-mozjpeg');
+    
     grunt.initConfig({
         sass: {
             options: {
@@ -14,12 +16,16 @@ module.exports = function (grunt) {
         },
 
         imagemin: {
-            dynamic: {
+            jpg: {
+                options: {
+                    progressive: true,
+                    optimizationLevel: 5
+                },
                 files: [{
                     expand: true,
                     cwd: 'images/',
-                    src: ['**/*.{png,jpg,gif}'],
-                    dest: 'images/build/'
+                    src: ['**/*.jpg'],
+                    dest: 'dest/build'
                 }]
             }
         },
@@ -36,15 +42,15 @@ module.exports = function (grunt) {
 
         browserSync: {
             bsFiles: {
-                src: ['./build/*.html', './build/css/**/*.css']
+                src: ['./*.html', './css/**/*.css']
             },
             options: {
                 watchTask: true,
                 server: {
-                    baseDir: "./build"
+                    baseDir: "./"
                 }
             }
-        }
+        },
 
     });
     // Load the plugins tasks
@@ -54,6 +60,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
 
     // Default task(s).
-    grunt.registerTask('default', ['sass', 'imagemin', 'watch', 'browserSync']);
+    grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch']);
 };
 
